@@ -1,0 +1,20 @@
+.grid-container {
+    max-width: 140rem;
+    margin: 4rem auto;
+    padding: 0 2rem 2rem;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -1rem -7rem;
+    &-item {
+        flex: 1 0 27rem;
+        margin: 5rem;
+        overflow: hidden;
+        height: 27rem;
+        .grid-image {
+            display: block;
+        }
+    }
+}

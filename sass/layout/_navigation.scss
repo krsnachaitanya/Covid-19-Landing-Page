@@ -1,0 +1,172 @@
+
+// Outer navigation wrapper
+.navigation {
+  margin: 3.1rem;
+  height: $nav-height;
+}
+
+// Container with no padding for navbar
+.nav-container {
+  max-width: $content-width;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+// .brand {}
+
+// Navigation 
+nav {
+
+  .nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+
+    .nav-list-item {
+      font-size: 1.8rem;
+      // position: relative;
+
+      .nav-link,
+      .nav-link:visited {
+        display: block;
+        padding: 0 2rem;
+        line-height: $nav-height;
+        color: $dark-grey-2;
+        text-decoration: none;
+
+        &:hover {
+          color: $primary;
+
+          &::after {
+            display: block;
+            position: relative;
+            bottom: 1.1rem;
+            line-height: 0px;
+            content: ' \25CF';
+            font-size: 14px;
+            text-align: center;
+          }
+        }
+      }
+
+      // Dropdown list
+      // .nav-list .nav-list-item {
+        // min-width: 19rem;
+
+        // .nav-link {
+          // padding: 1.5rem;
+          // line-height: 2rem;
+        // }
+      // }
+    }
+  }
+}
+
+// Dropdown list binds to JS toggle event
+.nav-dropdown {
+  position: absolute;
+  display: none;
+  z-index: 1;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Mobile navigation */
+
+// Binds to JS Toggle
+.nav-mobile {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  // background: $nav-background;
+  height: $nav-height;
+  width: $nav-height;
+}
+
+@media only screen and (max-width: 798px) {
+
+  // Hamburger nav visible on mobile only
+  .nav-mobile {
+    display: block;
+  }
+
+  nav {
+    width: 100%;
+    padding: $nav-height 0 15px;
+
+    ul {
+      display: none;
+
+      li {
+        float: none;
+
+        a {
+          padding: 15px;
+          line-height: 20px;
+        }
+
+        ul li a {
+          padding-left: 30px;
+        }
+      }
+    }
+  }
+
+  .nav-dropdown {
+    position: static;
+  }
+}
+
+@media screen and (min-width: $breakpoint) {
+  // .nav-list {}
+}
+
+#nav-toggle {
+  position: absolute;
+  left: 18px;
+  top: 22px;
+  cursor: pointer;
+  padding: 10px 35px 16px 0px;
+
+  span,
+  span:before,
+  span:after {
+    cursor: pointer;
+    border-radius: 1px;
+    height: 5px;
+    width: 35px;
+    // background: $nav-font-color;
+    position: absolute;
+    display: block;
+    content: '';
+    transition: all 300ms ease-in-out;
+  }
+
+  span:before {
+    top: -10px;
+  }
+
+  span:after {
+    bottom: -10px;
+  }
+
+  &.active span {
+    background-color: transparent;
+
+    &:before,
+    &:after {
+      top: 0;
+    }
+
+    &:before {
+      transform: rotate(45deg);
+    }
+
+    &:after {
+      transform: rotate(-45deg);
+    }
+  }
+}

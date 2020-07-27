@@ -1,0 +1,92 @@
+// ---------- Fonts ----------
+@font-face {
+    font-family: gelionRegular;
+    src: url(/Assets/Fonts/Gelion/Gelion-Regular.ttf);
+}
+
+@font-face {
+    font-family: gelionMedium;
+    src: url(/Assets/Fonts/Gelion/Gelion-Medium.ttf);
+}
+
+@font-face {
+    font-family: gelionBold;
+    src: url(/Assets/Fonts/Gelion/Gelion-Bold.ttf);
+}
+
+@font-face {
+    font-family: redHatDisplayBold;
+    src: url(/Assets/Fonts/RedHatFont/RedHatDisplay-Bold.otf);
+}
+
+// ---------- Basic Text Style ----------
+body {
+    font-family: "gelionRegular", sans-serif;
+    font-size: 1.8rem;
+    line-height: 1.7;
+    color: $dark-grey-2;
+}
+
+// ---------- Heading ----------
+.heading {
+    font-family: redHatdisplayBold;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: $dark-grey-1;
+}
+
+.h-primary {
+    font-size: 5.2rem;
+    line-height: 7.2rem;
+}
+
+.h-secondary {
+    font-size: 5rem;
+    line-height: 6rem;
+}
+
+// ---------- Heading Highlight ----------
+.heading-highlight {
+    display: block;
+    color: $primary;
+}
+
+.h-highlight-primary {
+    font-size: 3.2rem;
+    line-height: 6rem;
+}
+
+.h-highlight-secondary {
+    font-size: 2.9rem;
+    line-height: 3.6rem;
+}
+
+// ---------- Paragraph ----------
+.para {
+    font-family: gelionRegular;
+    text-transform: capitalize;
+    color: dark-grey-2;
+}
+
+.p-primary {
+    font-size: 2.4rem;
+    line-height: 4.6rem;
+}
+
+.p-secondary {
+    font-size: 2rem;
+    line-height: 4.3rem;
+}
+
+.p-tertiary {
+    font-size: 1.8rem;
+    line-height: 3.9rem;
+}
+
+// @media all and (orientation:landscape) {
+//     /* Styles for Landscape screen */
+// }
+
+// @media all and (orientation:portrait) {
+//     /* Styles for portrait screen */
+// }

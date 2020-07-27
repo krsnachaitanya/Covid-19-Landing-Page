@@ -1,0 +1,49 @@
+.overview {
+  background: url(/Assets/Images/OverviewHeroBG.svg) no-repeat right;
+  height: 86.7vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &-hero-content {
+    max-width: 35vw;
+    margin: 13.2rem 77rem 0 0;
+
+    h1 {
+      margin-bottom: 3rem;
+    }
+
+    p {
+      margin-bottom: 6.6rem;
+    }
+  }
+}
+
+.overview-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: $content-width;
+  margin: 7.4rem auto;
+
+  h2 {
+    padding-bottom: 2.2rem;
+    span {
+      line-height: 5.5rem;
+    }
+  }
+
+  p {
+    margin-bottom: 5.6rem;
+  }
+
+  &-image {
+    position: relative;
+    right: 9.2rem;
+    top: 1.2rem;
+  }
+
+  &-text {
+    max-width: 34vw;
+  }
+}
