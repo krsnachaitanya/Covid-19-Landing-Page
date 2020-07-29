@@ -1,0 +1,23 @@
+.symptomps {
+  margin: 14rem 0 6rem 0;
+
+  &-content {
+    max-width: 38vw;
+    margin: 0 auto;
+
+    h2 {
+      padding-bottom: 3.2rem;
+
+      span {
+        line-height: 5.4rem;
+      }
+    }
+  }
+  &-image {
+    text-align: center;
+
+    &-item {
+      padding: 6.8rem 0;
+    }
+  }
+}

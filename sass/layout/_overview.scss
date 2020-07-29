@@ -1,49 +1,98 @@
-.overview {
+.overview-hero-container {
   background: url(/Assets/Images/OverviewHeroBG.svg) no-repeat right;
-  height: 86.7vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 
-  &-hero-content {
-    max-width: 35vw;
-    margin: 13.2rem 77rem 0 0;
+  .overview {
+    height: 86.7vh;
+    width: $content-width;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
 
-    h1 {
-      margin-bottom: 3rem;
+    &-hero-content {
+      max-width: 35vw;
+
+      h1 {
+        margin: 13.2rem 0 3rem 0;
+      }
+
+      p {
+        margin-bottom: 6.6rem;
+      }
+    }
+  }
+}
+
+.overview-content-container {
+  // background: url(/Assets/Images/COVID_Image_BG.svg) 5.6% 97.5% no-repeat, url(/Assets/Images/COVID_Image_BG.svg) 5.6% 97.5% no-repeat;
+
+  .overview-content {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: $content-width;
+    margin: 7.4rem auto;
+
+    h2 {
+      padding-bottom: 2.2rem;
+
+      span {
+        line-height: 5.5rem;
+      }
     }
 
     p {
-      margin-bottom: 6.6rem;
+      margin-bottom: 5.6rem;
     }
+
+    &-image {
+      position: relative;
+      right: 9.2rem;
+      top: 1.2rem;
+    }
+
+    &-text {
+      max-width: 34vw;
+    }
+
+
   }
 }
 
-.overview-content {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  max-width: $content-width;
-  margin: 7.4rem auto;
+// .virus-bg-container {
+//   position: relative;
 
-  h2 {
-    padding-bottom: 2.2rem;
-    span {
-      line-height: 5.5rem;
-    }
-  }
+//   .virus-bg-item {
+//     width: 100vw;
+//     overflow: hidden;
+//   }
 
-  p {
-    margin-bottom: 5.6rem;
-  }
+//   .virus-bg {
+//     height: 300px;
+//     width: 300px;
+//     position: absolute;
+//     bottom: 26px;
+//     right: -168px;
 
-  &-image {
-    position: relative;
-    right: 9.2rem;
-    top: 1.2rem;
-  }
+//     &::before {
+//       background: url(/Assets/Images/COVID_Image_BG.svg) no-repeat;
+//       content: '';
+//       transform: scale(1.2) rotate(40.97deg);
+//       position: absolute;
+//       // top: 62%;
+//       // left: 0;
+//       width: 100%;
+//       height: 100%;
+//     }
 
-  &-text {
-    max-width: 34vw;
-  }
-}
+// &::after {
+//   background: url(/Assets/Images/COVID_Image_BG.svg) no-repeat;
+//   content: '';
+//   position: absolute;
+//   // top: 65%;
+//   // left: 0;
+//   width: 100%;
+//   height: 100%;
+// }
+// }
+// }
