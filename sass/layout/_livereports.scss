@@ -1,0 +1,23 @@
+.map-nav-lines {
+  display: inline-block;
+  span {
+    display: block;
+    width: 28px;
+    height: 2px;
+    background: $grey-1;
+    margin: 0 auto;
+
+    &:nth-child(1),
+    &:nth-child(3) {
+      width: 9.2px;
+      background: $grey-2;
+    }
+    &:nth-child(2) {
+      margin: 2.5rem auto;
+    }
+  }
+}
+
+.map-nav-arrows {
+  display: inline-block;
+}

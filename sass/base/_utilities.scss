@@ -1,21 +1,14 @@
 .ta-center {
 	text-align: center;
 }
-.u-margin-bottom-small {
-	margin-bottom: 1.5rem;
-}
-.u-margin-bottom-medium {
-	margin-bottom: 4rem;
-}
-.u-margin-bottom-big {
-	margin-bottom: 8rem;
-}
-.u-margin-top-medium {
-	margin-top: 4rem;
-}
-.u-margin-top-big {
-	margin-top: 8rem;
-}
-.u-margin-top-huge {
-	margin-top: 10rem;
+
+.plus-icon {
+	display: inline-block;
+	vertical-align: middle;
+	width: 38px;
+	height: 38px;
+	background-image: linear-gradient($grey-1, $grey-1), linear-gradient($grey-1, $grey-1);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 5% 70%, 70% 5%;
 }
