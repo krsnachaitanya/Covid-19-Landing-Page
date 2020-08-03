@@ -144,7 +144,25 @@
 
     &-country {
       &-item {
-        
+        display: flex;
+        justify-content: space-between;
+        font-family: gelionMedium;
+        font-size: 3.1rem;
+        color: #13615F;
+
+        .country-name {
+          display: flex;
+          gap: 2.7rem;
+        }
+
+        .country-cases {
+          font-size: 2.4rem;
+          color: #035755;
+
+          img {
+            padding-left: 2.1rem;
+          }
+        }
       }
     }
   }
