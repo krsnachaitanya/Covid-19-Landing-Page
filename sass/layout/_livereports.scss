@@ -1,23 +1,155 @@
-.map-nav-lines {
-  display: inline-block;
-  span {
-    display: block;
-    width: 28px;
-    height: 2px;
-    background: $grey-1;
-    margin: 0 auto;
+.live-reports {
+  display: flex;
+  max-width: 80.27vw;
+  margin: 8.6rem auto;
+  gap: 3.6rem;
 
-    &:nth-child(1),
-    &:nth-child(3) {
-      width: 9.2px;
-      background: $grey-2;
+  &-map {
+    position: relative;
+
+    &-nav {
+      position: absolute;
+      width: 8.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2.4rem;
+      padding: 2.2rem 3rem;
+      margin: 0 5.2rem;
+      background: $color-white;
+      box-shadow: 0px 5px 50px rgba(104, 33, 28, 0.1);
+      border-radius: 5px;
+
+      .plus-icon {
+        line-height: 0;
+
+        svg {
+          stroke: $grey-1;
+        }
+      }
+
+      .map-nav-lines {
+
+        span {
+          display: block;
+          width: 28px;
+          height: 2px;
+          background: $grey-1;
+          margin: 0 auto;
+
+          &:nth-child(1),
+          &:nth-child(3) {
+            width: 9.2px;
+            height: 1px;
+            background: $grey-2;
+          }
+
+          &:nth-child(2) {
+            margin: 2.5rem auto;
+          }
+        }
+      }
+
+      .map-nav-arrows {
+        display: inline-flex;
+        flex-direction: column;
+
+        svg {
+          fill: $grey-2;
+          cursor: pointer;
+
+          &:nth-child(2) {
+            padding-bottom: 1.5px;
+            transform: rotate(180deg);
+          }
+
+          &:hover {
+            fill: $red-2;
+          }
+        }
+      }
     }
-    &:nth-child(2) {
-      margin: 2.5rem auto;
+
+    &-search {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 7.6rem;
+      height: 7.3rem;
+      margin: 2px 5px;
+      background: $color-white;
+      right: 0;
+      box-shadow: 0px 7px 76px rgba(146, 53, 46, 0.18);
+      border-radius: 5px;
+
+      svg {
+        stroke: $red-2;
+      }
+    }
+
+    &-image {
+      img {
+        position: relative;
+        top: 5.4rem;
+        right: 6px;
+        z-index: -1;
+      }
+    }
+  }
+
+  &-table {
+    width: 50.4rem;
+    padding: 5.5rem;
+
+    &-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      h3 {
+        font-family: gelionRegular;
+        font-size: 4.8rem;
+      }
+
+      &-nav-icons {
+        display: inline-flex;
+        gap: 1.95rem;
+        width: 8.6rem;
+        height: 5rem;
+        line-height: 0;
+        align-items: center;
+        justify-content: center;
+        background: $color-white;
+        box-shadow: 0px 5px 50px rgba(87, 1, 0, 0.1);
+        border-radius: 5px;
+
+        svg {
+          &:nth-child(odd) {
+            cursor: pointer;
+            stroke: $grey-2;
+
+          }
+
+          &:nth-child(odd):hover {
+            stroke: $red-2;
+          }
+
+          &:nth-child(1) {
+            transform: rotate(180deg);
+          }
+        }
+      }
+    }
+
+    &-country {
+      &-item {
+        
+      }
     }
   }
 }
 
-.map-nav-arrows {
-  display: inline-block;
-}
+
+
+// filter: invert(41%) sepia(88%) saturate(431%) hue-rotate(103deg) brightness(89%) contrast(89%);

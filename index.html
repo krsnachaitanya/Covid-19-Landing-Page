@@ -11,7 +11,7 @@
 </head>
 
 <body>
-  <div style="position: absolute; top: 0; left: -6px; opacity: 35%; z-index: -1; width: 100vw;"><img
+  <div style="position: absolute; top: 0; opacity: 35%; z-index: -1; width: 100vw;"><img
       src="/Assets/Images/Covid-19 Landing Page 01.jpg" alt=""></div>
   <section class="navigation">
     <div class="nav-container">
@@ -212,79 +212,112 @@
   <section class="live-reports">
     <div class="live-reports-map">
       <div class="live-reports-map-nav">
-        <div class="plus-icon"></div>
+        <div class="plus-icon">
+          <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0.885986 14.7839H28.4736" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M14.6799 0.989502V28.5771" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </div>
         <div class="map-nav-lines">
           <span></span>
           <span></span>
           <span></span>
         </div>
         <div class="map-nav-arrows">
-          <div class="triangle"></div>
+          <svg width="20" height="25" viewBox="0 0 20 25" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M7.91381 2.18226C8.68163 0.247844 11.4196 0.247837 12.1874 2.18226L19.7517 21.2394C20.3508 22.7487 19.2388 24.3866 17.6149 24.3866H2.48627C0.862436 24.3866 -0.249602 22.7487 0.349477 21.2394L7.91381 2.18226Z" />
+          </svg>
+          <svg width="20" height="25" viewBox="0 0 20 25" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M7.91381 2.18226C8.68163 0.247844 11.4196 0.247837 12.1874 2.18226L19.7517 21.2394C20.3508 22.7487 19.2388 24.3866 17.6149 24.3866H2.48627C0.862436 24.3866 -0.249602 22.7487 0.349477 21.2394L7.91381 2.18226Z" />
+          </svg>
         </div>
       </div>
-      <div class="live-reports-map-search"></div>
+      <div class="live-reports-map-search">
+        <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M13.5634 25.1287C19.9501 25.1287 25.1276 19.9512 25.1276 13.5645C25.1276 7.17772 19.9501 2.00024 13.5634 2.00024C7.17663 2.00024 1.99915 7.17772 1.99915 13.5645C1.99915 19.9512 7.17663 25.1287 13.5634 25.1287Z"
+            stroke-width="2.67" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M30.9096 30.9108L21.7305 21.7317" stroke-width="2.67" stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+      </div>
       <div class="live-reports-map-image">
         <img src="/Assets/Images/Covid-19_World_Map.svg" alt="Covid-19 world map">
       </div>
     </div>
-    <div class="live-reports-report">
-      <div class="live-reports-report-header">
-        <h3 class="live-reports-report-heading">Live reports</h3>
-        <div class="live-reports-report-nav-icons"></div>
+    <div class="live-reports-table">
+      <div class="live-reports-table-header">
+        <h3 class="heading">Live reports</h3>
+        <div class="live-reports-table-header-nav-icons">
+          <svg width="11" height="19" viewBox="0 0 11 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2.18485 2.06794L9.52795 9.41104L2.18485 16.7541" stroke-width="2.85" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+          <svg width="3" height="21" viewBox="0 0 3 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <line x1="1.45484" y1="1.6692" x2="1.45484" y2="19.0208" stroke="#DEE1ED" stroke-width="2.23"
+              stroke-linecap="round" />
+          </svg>
+          <svg width="11" height="19" viewBox="0 0 11 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2.18485 2.06794L9.52795 9.41104L2.18485 16.7541" stroke-width="2.85" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+        </div>
       </div>
-      <div class="live-reports-report-country">
-        <div class="live-reports-report-country-item">
-          <div class="lrrci-country">
-            <img src="/Assets/Images/f1.svg" alt="USA Flag" class="lrrci-country-flag">
-            <p class="lrrci-country-name">USA</p>
+      <div class="live-reports-table-country">
+        <div class="live-reports-table-country-item">
+          <div class="country">
+            <img src="/Assets/Images/f1.svg" alt="USA Flag" class="country-flag">
+            <p class="country-name">USA</p>
           </div>
-          <div class="lrrci-country-cases">100,392
-            <span></span>
-          </div>
-        </div>
-        <div class="live-reports-report-country-item">
-          <div class="lrrci-country">
-            <img src="/Assets/Images/f2.svg" alt="Italy Flag" class="lrrci-country-flag">
-            <p class="lrrci-country-name">Italy</p>
-          </div>
-          <div class="lrrci-country-cases">86,498
-            <span></span>
+          <div class="country-cases">100,392
+            <span><img src="/Assets/Images/Polygon 1.svg" alt="Up Arrow Icon"></span>
           </div>
         </div>
-        <div class="live-reports-report-country-item">
-          <div class="lrrci-country">
-            <img src="/Assets/Images/f3.svg" alt="China Flag" class="lrrci-country-flag">
-            <p class="lrrci-country-name">China</p>
+        <div class="live-reports-table-country-item">
+          <div class="country">
+            <img src="/Assets/Images/f2.svg" alt="Italy Flag" class="country-flag">
+            <p class="country-name">Italy</p>
           </div>
-          <div class="lrrci-country-cases">81,340
-            <span></span>
-          </div>
-        </div>
-        <div class="live-reports-report-country-item">
-          <div class="lrrci-country">
-            <img src="/Assets/Images/f4.svg" alt="Spain Flag" class="lrrci-country-flag">
-            <p class="lrrci-country-name">Spain</p>
-          </div>
-          <div class="lrrci-country-cases">64,059
-            <span></span>
+          <div class="country-cases">86,498
+            <span><img src="/Assets/Images/Polygon 1.svg" alt="Up Arrow Icon"></span>
           </div>
         </div>
-        <div class="live-reports-report-country-item">
-          <div class="lrrci-country">
-            <img src="/Assets/Images/f5.svg" alt="Germany Flag" class="lrrci-country-flag">
-            <p class="lrrci-country-name">Germany</p>
+        <div class="live-reports-table-country-item">
+          <div class="country">
+            <img src="/Assets/Images/f3.svg" alt="China Flag" class="country-flag">
+            <p class="country-name">China</p>
           </div>
-          <div class="lrrci-country-cases">50,871
-            <span></span>
+          <div class="country-cases">81,340
+            <span><img src="/Assets/Images/Polygon 1.svg" alt="Down Arrow Icon"></span>
           </div>
         </div>
-        <div class="live-reports-report-country-item">
-          <div class="lrrci-country">
-            <img src="/Assets/Images/f6.svg" alt="Iran Flag" class="lrrci-country-flag">
-            <p class="lrrci-country-name">Iran</p>
+        <div class="live-reports-table-country-item">
+          <div class="country">
+            <img src="/Assets/Images/f4.svg" alt="Spain Flag" class="country-flag">
+            <p class="country-name">Spain</p>
           </div>
-          <div class="lrrci-country-cases">32,332
-            <span></span>
+          <div class="country-cases">64,059
+            <span><img src="/Assets/Images/Polygon 1.svg" alt="Up Arrow Icon"></span>
+          </div>
+        </div>
+        <div class="live-reports-table-country-item">
+          <div class="country">
+            <img src="/Assets/Images/f5.svg" alt="Germany Flag" class="country-flag">
+            <p class="country-name">Germany</p>
+          </div>
+          <div class="country-cases">50,871
+            <span><img src="/Assets/Images/Polygon 1.svg" alt="Up Arrow Icon"></span>
+          </div>
+        </div>
+        <div class="live-reports-table-country-item">
+          <div class="country">
+            <img src="/Assets/Images/f6.svg" alt="Iran Flag" class="country-flag">
+            <p class="country-name">Iran</p>
+          </div>
+          <div class="country-cases">32,332
+            <span><img src="/Assets/Images/Polygon 1.svg" alt="Up Arrow Icon"></span>
           </div>
         </div>
       </div>

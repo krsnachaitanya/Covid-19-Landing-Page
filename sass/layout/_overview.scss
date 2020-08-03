@@ -12,11 +12,11 @@
       max-width: 35vw;
 
       h1 {
-        margin: 13.2rem 0 3rem 0;
+        margin: 13rem 0 3rem 0;
       }
 
       p {
-        margin-bottom: 6.6rem;
+        margin-bottom: 7.2rem;
       }
     }
   }
@@ -28,8 +28,8 @@
   .overview-content {
     position: relative;
     display: flex;
+    gap: 11.2rem;
     align-items: center;
-    justify-content: space-between;
     max-width: $content-width;
     margin: 7.4rem auto;
 
@@ -37,25 +37,25 @@
       padding-bottom: 2.2rem;
 
       span {
-        line-height: 5.5rem;
+        line-height: 5.4rem;
       }
     }
 
     p {
-      margin-bottom: 5.6rem;
+      margin-bottom: 6.2rem;
     }
 
     &-image {
-      position: relative;
-      right: 9.2rem;
-      top: 1.2rem;
+      img {
+        position: relative;
+        right: 9rem;
+        top: 1rem;
+      }
     }
 
     &-text {
       max-width: 34vw;
     }
-
-
   }
 }
 

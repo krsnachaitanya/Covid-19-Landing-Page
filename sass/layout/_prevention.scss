@@ -1,5 +1,5 @@
 .prevention {
-  margin: 6rem 0;
+  margin: 6.5rem 0;
 
   &-headtxt {
     max-width: 36vw;
@@ -16,7 +16,7 @@
 }
 
 .prevention-tip {
-  margin: 6.8rem auto;
+  margin: 6.4rem auto;
 
   &-item {
     max-width: $content-width;
@@ -32,46 +32,55 @@
     }
 
     &:nth-child(2) {
-      top: -1.7rem;
+      top: -.8rem;
       right: -8px;
       gap: 8.6vmax;
+
       .pti-content {
-        padding-top: 2rem;
+        padding-top: 1.2rem;
       }
     }
+
     &:nth-child(3) {
-      top: -2.4rem;
+      top: -1.6rem;
       gap: 12.6vmax;
     }
+
     &:nth-child(4) {
-      top: -3.9rem;
+      top: -2.4rem;
       gap: 7vmax;
-      .pti-image {
-        img {
-          padding-bottom: 9.4rem;
+
+      .pti-content {
+        padding-top: 9.6rem;
+
+        .pti-text {
+          h3 {
+            padding-bottom: 2.8rem;
+          }
         }
       }
     }
 
     .pti-content {
       display: flex;
+      gap: 4.2rem;
 
       .pti-number {
         font-family: redHatDisplayBold;
         position: relative;
         font-size: 4.4rem;
         color: $primary;
-        padding-left: 1.5rem;
-        margin-right: 4.2rem;
+        padding: 1.6rem 1rem 2rem 1.5rem;
         width: 7.5rem;
         height: 7.5rem;
 
         &::before {
           position: absolute;
-          right: -16px;
           content: '';
           width: 7.5rem;
           height: 7.5rem;
+          right: -1px;
+          top: 8px;
           border-radius: 5rem;
           background-color: #fa555226;
         }
@@ -86,7 +95,7 @@
           letter-spacing: 0.5px;
           text-transform: capitalize;
           color: $dark-grey-1;
-          padding-bottom: 1.2rem;
+          padding: 2rem 0 2.2rem 0;
         }
 
         .pti-para {

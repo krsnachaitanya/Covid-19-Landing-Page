@@ -1,4 +1,3 @@
-
 // Outer navigation wrapper
 .navigation {
   margin: 3.1rem;
@@ -27,7 +26,13 @@ nav {
 
     .nav-list-item {
       font-size: 1.8rem;
-      // position: relative;
+
+      &:last-child {
+        a {
+          margin: 0 .2rem 0 2rem;
+
+        }
+      }
 
       .nav-link,
       .nav-link:visited {
@@ -54,12 +59,12 @@ nav {
 
       // Dropdown list
       // .nav-list .nav-list-item {
-        // min-width: 19rem;
+      // min-width: 19rem;
 
-        // .nav-link {
-          // padding: 1.5rem;
-          // line-height: 2rem;
-        // }
+      // .nav-link {
+      // padding: 1.5rem;
+      // line-height: 2rem;
+      // }
       // }
     }
   }
