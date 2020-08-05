@@ -1,0 +1,101 @@
+.subscribe {
+  &-container {
+    padding: 5.5rem;
+    text-align: center;
+
+    h2 {
+      font-size: 6.4rem;
+      color: $brown;
+      margin-bottom: 4rem;
+      letter-spacing: .7px;
+    }
+
+    .signup {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 79rem;
+      height: 11.4rem;
+      background: $color-white;
+      box-shadow: 0px 8px 80px rgba(0, 0, 0, 0.06);
+      border-radius: 57px;
+      margin: auto;
+
+      #email-signup {
+        flex-grow: 2;
+        display: block;
+        font-family: gelionRegular;
+        font-size: 2.2rem;
+        caret-color: $red-2;
+        color: #383838;
+        outline-style: none;
+        border: none;
+        margin-left: 1.8rem;
+        padding: 2.8rem 2rem;
+        border-radius: 6rem;
+        transition: all 200ms ease-in-out;
+
+        &:focus {
+          background: rgba(250, 235, 215, 0.3);
+          box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.06);
+        }
+      }
+
+      #btn {
+        font-family: gelionMedium;
+        font-size: 2.2rem;
+        background-color: $red-2;
+        border: none;
+        border-radius: 6rem;
+        color: white;
+        padding: 2.8rem 8rem;
+        margin: 1.8rem;
+
+        &:hover {
+          background-color: $dark-grey-2;
+        }
+
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+// @media (max-width:500px) {
+
+//   .card {
+//     width: 99vw;
+//     height: auto;
+//     padding: 0px 10px 0px 10px;
+//     overflow: hidden;
+//   }
+
+//   .signup {
+//     display: inline-flex;
+//     width: 95vw;
+//     height: auto;
+//     margin: 0;
+//     flex-wrap: wrap;
+//   }
+
+//   #btn {
+//     width: 100%;
+//   }
+
+//   #email-signup {
+//     width: 90vw;
+//   }
+
+
+// }

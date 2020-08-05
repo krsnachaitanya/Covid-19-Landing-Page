@@ -16,13 +16,13 @@
 }
 
 .prevention-tip {
-  margin: 6.4rem auto;
+  margin: 6.3rem auto;
 
   &-item {
     max-width: $content-width;
     margin: 0 auto;
     display: flex;
-    gap: 8.8vmax;
+    gap: 9vmax;
     align-items: center;
     position: relative;
 
@@ -31,59 +31,23 @@
       justify-content: flex-end;
     }
 
-    &:nth-child(2) {
-      top: -.8rem;
-      right: -8px;
-      gap: 8.6vmax;
-
-      .pti-content {
-        padding-top: 1.2rem;
-      }
-    }
-
-    &:nth-child(3) {
-      top: -1.6rem;
-      gap: 12.6vmax;
-    }
-
-    &:nth-child(4) {
-      top: -2.4rem;
-      gap: 7vmax;
-
-      .pti-content {
-        padding-top: 9.6rem;
-
-        .pti-text {
-          h3 {
-            padding-bottom: 2.8rem;
-          }
-        }
-      }
-    }
-
     .pti-content {
       display: flex;
-      gap: 4.5rem;
+      gap: 4.2rem;
+      padding-top: 8px;
 
       .pti-number {
         font-family: redHatDisplayBold;
-        position: relative;
         font-size: 4.4rem;
         color: $primary;
-        padding: 1.6rem 1.8rem;
         width: 7.5rem;
         height: 7.5rem;
-
-        &::before {
-          position: absolute;
-          content: '';
-          width: 7.5rem;
-          height: 7.5rem;
-          right: -1px;
-          top: 8px;
-          border-radius: 5rem;
-          background-color: #fa555226;
-        }
+        border-radius: 5rem;
+        background-color: #fa555226;
+        margin: 8px 0px 0px 2px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
 
       .pti-text {
@@ -102,13 +66,40 @@
           line-height: 4rem;
         }
       }
-
     }
 
-    // .pti-image {
-    //   img {
-    //     margin: 0 10rem;
-    //   }
-    // }
+    .pti-image {
+      line-height: 0;
+    }
+
+    &:nth-child(2) {
+      gap: 8.5vmax;
+      padding-left: 10px;
+
+      .pti-content {
+        padding-top: 1.4rem;
+      }
+    }
+
+    &:nth-child(3) {
+      gap: 12.7vmax;
+      bottom: 4px;
+    }
+
+    &:nth-child(4) {
+      gap: 6.7vmax;
+      bottom: 5px;
+      left: 5px;
+
+      .pti-content {
+        padding-top: 10.4rem;
+
+        .pti-text {
+          p {
+            padding-top: .4rem;
+          }
+        }
+      }
+    }
   }
 }

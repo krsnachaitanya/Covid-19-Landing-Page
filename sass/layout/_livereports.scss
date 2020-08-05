@@ -1,8 +1,9 @@
 .live-reports {
   display: flex;
   max-width: 80.27vw;
-  margin: 8.6rem auto;
-  gap: 3.6rem;
+  margin: 9rem auto;
+  padding-top: 2.5rem;
+  gap: 3.3rem;
 
   &-map {
     position: relative;
@@ -77,7 +78,7 @@
       justify-content: center;
       width: 7.6rem;
       height: 7.3rem;
-      margin: 2px 5px;
+      margin: 0 3px;
       background: $color-white;
       right: 0;
       box-shadow: 0px 7px 76px rgba(146, 53, 46, 0.18);
@@ -91,7 +92,7 @@
     &-image {
       img {
         position: relative;
-        top: 5.4rem;
+        top: 5rem;
         right: 6px;
         z-index: -1;
       }
@@ -101,6 +102,11 @@
   &-table {
     width: 50.4rem;
     padding: 5.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    background: linear-gradient(360deg, #FFFBFB -79.45%, #FDFDFD 105.35%);
+    box-shadow: 0px 7px 95px rgba(0, 0, 0, 0.07);
 
     &-header {
       display: flex;
@@ -110,11 +116,14 @@
       h3 {
         font-family: gelionRegular;
         font-size: 4.8rem;
+        letter-spacing: .5px;
+        line-height: 6rem;
       }
 
       &-nav-icons {
         display: inline-flex;
-        gap: 1.95rem;
+        gap: 1.6rem;
+        margin: 0 2px;
         width: 8.6rem;
         height: 5rem;
         line-height: 0;
@@ -143,9 +152,14 @@
     }
 
     &-country {
+      display: flex;
+      flex-direction: column;
+      gap: 3.6rem;
+
       &-item {
         display: flex;
         justify-content: space-between;
+        align-items: center;
         font-family: gelionMedium;
         font-size: 3.1rem;
         color: #13615F;
@@ -153,6 +167,8 @@
         .country-name {
           display: flex;
           gap: 2.7rem;
+          align-items: center;
+          padding-right: 4px;
         }
 
         .country-cases {
@@ -160,14 +176,21 @@
           color: #035755;
 
           img {
-            padding-left: 2.1rem;
+            padding: 0 2px 0 1.6rem;
+          }
+        }
+
+        &:nth-child(3) {
+          .country-cases {
+            img {
+              transform: rotate(180deg);
+              padding: 0 1.3rem 0 2px;
+              filter: invert(41%) sepia(88%) saturate(431%) hue-rotate(103deg) brightness(89%) contrast(89%);
+
+            }
           }
         }
       }
     }
   }
 }
-
-
-
-// filter: invert(41%) sepia(88%) saturate(431%) hue-rotate(103deg) brightness(89%) contrast(89%);
