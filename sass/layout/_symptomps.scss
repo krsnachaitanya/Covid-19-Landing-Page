@@ -1,5 +1,5 @@
 .symptomps {
-  margin: 14rem 0 6rem 0;
+  margin: 7rem 0 6rem 0;
 
   &-content {
     max-width: 38vw;
@@ -13,12 +13,10 @@
       }
     }
   }
+
   &-image {
     text-align: center;
     padding: 6.8rem 0;
-
-    &-item {
-      
-    }
+    background: url(/Assets/Images/Symptoms_design_elements-2.svg) 5.2% 68.5% no-repeat, url(/Assets/Images/Symptoms_design_elements-1.svg) 98% 93% no-repeat;
   }
 }

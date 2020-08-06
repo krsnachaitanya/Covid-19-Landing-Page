@@ -1,62 +1,78 @@
 .contagion {
-  margin: 9.4rem auto;
-  background: url(/Assets/Images/COVID_Image_BG.svg) 5.9% 97.5% no-repeat;
-}
-
-.contagion-text {
   margin: 0 auto;
-  max-width: 30vw;
+  background: url(/Assets/Images/COVID_Image_BG.svg) 5.9% 89% no-repeat;
+  position: relative;
+  overflow: hidden;
 
-  h2 {
-    padding-bottom: 3.2rem;
-
-    span {
-      line-height: 5.4rem;
-    }
+  &::after {
+    position: absolute;
+    top: 0;
+    right: 3.15%;
+    transform: rotate(325deg);
+    content: '';
+    width: 13.1rem;
+    height: 13.6rem;
+    background: url(/Assets/Images/COVID_Image_BG.svg) top/contain no-repeat;
+    filter: invert(94%) sepia(104%) saturate(4314%) hue-rotate(624deg) brightness(836%) contrast(90%);
   }
-}
 
-.contagion-cards {
-  display: flex;
-  justify-content: space-between;
-  margin: 7rem auto;
-  max-width: $content-width;
+  &-text {
+    margin: 0 auto;
+    max-width: 30vw;
+    padding-top: 6.8rem;
 
-  &-item {
-    max-width: 46rem;
-    text-align: center;
-    background-color: $color-white;
-    border-bottom: 6px solid $color-white;box-shadow: 0px 5px 80px rgba(0, 0, 0, 0.08);
-    border-radius: 10px;
-    padding: 6.5rem 5rem;
-    transition: all 200ms ease-in-out;
+    h2 {
+      padding-bottom: 3.2rem;
 
-    &:hover {
-    border-radius: 10px 10px 6px 6px;
-    box-shadow: 0px 35px 87px rgba(0, 0, 0, 0.11);
-    border-bottom: 6px solid $primary;
-    }
-
-    img {
-      max-width: 25rem;
-      margin: 4.3rem auto 6.2rem auto;
-    }
-
-    h3 {
-      text-transform: capitalize;
-      font-size: 3.6rem;
-      line-height: 5rem;
-      color: $dark-grey-1;
-      padding-bottom: 1rem;
-    }
-
-    p {
-      text-transform: capitalize;
-      line-height: 3.6rem;
+      span {
+        line-height: 5.4rem;
+      }
     }
   }
 
-  div:nth-child(2) img {
-    transform: scale(1.06);
+  &-cards {
+    display: flex;
+    justify-content: space-between;
+    margin: 7rem auto;
+    max-width: $content-width;
+
+    &-item {
+      max-width: 46rem;
+      text-align: center;
+      background-color: $color-white;
+      border-bottom: 6px solid $color-white;
+      box-shadow: 0px 5px 80px rgba(0, 0, 0, 0.08);
+      border-radius: 10px;
+      padding: 6.5rem 5rem;
+      transition: all 200ms ease-in-out;
+
+      &:hover {
+        border-radius: 10px 10px 6px 6px;
+        box-shadow: 0px 35px 87px rgba(0, 0, 0, 0.11);
+        border-bottom: 6px solid $primary;
+      }
+
+      img {
+        max-width: 25rem;
+        margin: 4.3rem auto 6.2rem auto;
+      }
+
+      h3 {
+        text-transform: capitalize;
+        font-size: 3.6rem;
+        line-height: 5rem;
+        color: $dark-grey-1;
+        padding-bottom: 1rem;
+      }
+
+      p {
+        text-transform: capitalize;
+        line-height: 3.6rem;
+      }
+    }
+
+    div:nth-child(2) img {
+      transform: scale(1.06);
+    }
   }
 }

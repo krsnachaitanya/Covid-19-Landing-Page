@@ -17,6 +17,20 @@
 
 .prevention-tip {
   margin: 6.3rem auto;
+  overflow: hidden;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    top: 15.15%;
+    left: -7.1%;
+    content: '';
+    width: 27.7rem;
+    height: 28.7rem;
+    background: url(/Assets/Images/COVID_Image_BG.svg) top/contain no-repeat;
+    opacity: 74%;
+    filter: invert(70%) sepia(97%) saturate(365%) hue-rotate(103deg) brightness(101%) contrast(96%);
+  }
 
   &-item {
     max-width: $content-width;
@@ -99,6 +113,30 @@
             padding-top: .4rem;
           }
         }
+      }
+
+      &::before {
+        position: absolute;
+        top: 3.5%;
+        right: -14%;
+        content: '';
+        width: 12.8rem;
+        height: 13.1rem;
+        opacity: 50%;
+        background: url(/Assets/Images/COVID_Image_BG.svg) top/contain no-repeat;
+        filter: invert(70%) sepia(97%) saturate(365%) hue-rotate(103deg) brightness(101%) contrast(96%);
+      }
+
+      &::after {
+        position: absolute;
+        top: 29.15%;
+        right: -26.8%;
+        content: '';
+        width: 31.5rem;
+        height: 32.4rem;
+        opacity: 50%;
+        background: url(/Assets/Images/COVID_Image_BG.svg) top/contain no-repeat;
+        filter: invert(50%) sepia(110%) saturate(780%) hue-rotate(320deg) brightness(90%) contrast(195%);
       }
     }
   }
